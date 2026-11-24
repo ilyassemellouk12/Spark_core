@@ -1,0 +1,16 @@
+# Environnement virtuel
+.venv/
+
+# Données : trop lourdes pour GitHub (Parquet TLC + tables Delta régénérables par le notebook)
+data/**
+!data/*/
+!data/*/.gitkeep
+
+# Sauvegardes et fichiers temporaires
+*.backup*.ipynb
+.ipynb_checkpoints/
+__pycache__/
+spark-warehouse/
+metastore_db/
+derby.log
+.DS_Store
